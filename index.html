@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor de Rich Text</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="quadrado">
+  <h1>Editor de Rich Text</h1>
+  <p>(Selecione o texto que voce quer usar as formatacoes.)</p>
+  <div id="editor" contenteditable="true" placeholder="Digite seu texto aqui..." onfocus="removerPlaceholder()" onblur="restaurarPlaceholder()"></div>
+
+  <button onclick="formatarNegrito()">Negrito</button>
+  <button onclick="formatarItalico()">Italico</button>
+  <button onclick="formatarSublinhado()">Sublinhado</button>
+  <button onclick="limparFormatacao()">Limpar Formatacao</button>
+  <button onclick="aumentarFonte()" id="aumentar">+</button>
+  <p id="tamanhoAtual"></p>
+  <button onclick="diminuirFonte()" id="diminuir">-</button>
+  
+
+</div>
+</body>
+</html>

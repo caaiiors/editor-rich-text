@@ -1,0 +1,63 @@
+/* Define as propriedades de altura, margem, exibição flexível, justificação e alinhamento de itens */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #db7d7d, #93c226); /* Gradiente de fundo */
+  font-family: Arial, Helvetica, sans-serif; /* Família de fontes */
+  font-display: swap; /* Estratégia de exibição de fonte */
+  background-attachment: fixed; /* Fixa o fundo durante a rolagem */
+}
+    
+/* Define estilos para o elemento do quadrado */
+#quadrado {
+  width: 510px; /* Largura do quadrado */
+  text-align: center; /* Alinhamento do texto */
+  border-radius: 20px; /* Raio do canto da borda */
+  backdrop-filter: blur(5.5px); /* Aplica um efeito de desfoque ao plano de fundo */
+  -webkit-backdrop-filter: blur(5.5px); /* Para navegadores WebKit */
+  background: rgba(255, 255, 255, 0.75); /* Cor de fundo com opacidade */
+  border: 1px solid rgba(255, 255, 255, 0.01); /* Borda com opacidade */
+  border-radius: 19px; /* Raio do canto da borda */
+  box-shadow: 0 4px 30px rgb(35, 35, 35, 0.1); /* Sombra */
+  color: #232323; /* Cor do texto */
+  backdrop-filter: blur(4px); /* Aplica um efeito de desfoque ao plano de fundo */
+  background: rgba(255, 255, 255, 0.30); /* Cor de fundo com opacidade */
+  border: 1px solid rgba(255, 255, 255, 0.34); /* Borda com opacidade */
+  flex-basis: 400px; /* Tamanho base do elemento em um contêiner flexível */
+  padding: 20px 35px; /* Espaçamento interno */
+}    
+
+/* Define estilos para o editor de texto */
+#editor {
+  border: 2px solid black; /* Borda do quadrado */
+  min-height: 300px; /* Altura mínima para o editor de texto */
+  width: 500px; /* Largura do editor de texto */
+  padding: 10px; /* Espaçamento interno */
+  font-family: Arial, Helvetica, sans-serif; /* Família de fontes */
+  border-radius: 20px; /* Raio do canto da borda */
+}
+
+/* Define estilos para os botões */
+button {
+  padding: 4px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 10px; /* Raio do canto da borda */
+  cursor: pointer; /* Define o cursor como apontador */
+  transition: transform 0.2s ease-in-out; /* Efeito de transição suave */
+  backdrop-filter: blur(4px); /* Aplica um efeito de desfoque ao plano de fundo */
+  background: rgba(255, 255, 255, 0.30); /* Cor de fundo com opacidade */
+  border: 1px solid rgba(255, 255, 255, 0.34); /* Borda com opacidade */
+  margin-right: 10px; /* adiciona margem a direita para separar os botoes*/
+}
+
+/* Define estilos para o efeito de hover nos botões */
+button:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+#aumentar, #diminuir {
+  display: flex;
+}
